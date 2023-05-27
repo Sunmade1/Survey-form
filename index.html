@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+</div>
     <form id="Survey-form">
         <label id="name-label">Name</label>
-        <input id="name" type="text" value="name" placeholder="Enter your name" required>
+        <input id="name" type="text" value="Enter your name" placeholder="Enter your name" required>
         <label id="email-label">Email</label>
-        <input id="email" type="email" value="email" placeholder="Enter your email" required>
-        <label id="number-label">Age</label>
+        <input id="email" type="text" value="Enter your email" placeholder="Enter your email" required>
+        <label id="number-label">Age (optional)</label>
         <input id="number" type="number" value="number" placeholder="Age" min="10" max="99">
         <p>Which option best describes your current role?</p>
         <select id="dropdown" placeholder="Select your current role">
@@ -50,6 +53,12 @@
                 <input type="checkbox" value="Wiki">Wiki<br>
                 <input type="checkbox" value="Forum">Forum<br>
                 <input type="checkbox" value="Additional Courses">Additional Courses<br>
-    </form>
+                <p>Any comment or suggestions?</p>
+
+          <textarea>
+            Enter your comments here...
+          </textarea>
+         <button type="submit">Submit</button>
+            </form>
 </body>
 </html>
